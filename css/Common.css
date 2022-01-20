@@ -1,0 +1,42 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem;
+  height: 2rem;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-purple {
+  background-color: var(omfpurple);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 3rem;
+}
+/*# sourceMappingURL=Common.css.map */
