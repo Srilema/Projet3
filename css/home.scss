@@ -25,7 +25,7 @@
         margin: 1rem 0rem 1rem 0rem;
     }
     .steps_number{
-        background-color: purple;
+        background-color:$omfpurple;
         color:white;
         border-radius: 100%;
         height: 1.25rem;
@@ -36,6 +36,7 @@
         align-items: center;
         justify-content: center;
         margin: 1rem -0.30rem 1rem 0rem;
+        z-index: 2;
     }
     .steps_text{
         display:flex;
@@ -56,7 +57,7 @@
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
-    padding:1rem
+    padding:1rem;
 }
     .resto_card{
         height: 13rem;
@@ -77,7 +78,7 @@
             padding: 1rem 0rem 1rem 0rem
         }
         .resto_hearth:hover{
-            color: var(omfpurple);
+            color: $omfpurple;
         }
 
 .resto_card img {
