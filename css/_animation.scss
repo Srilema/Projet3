@@ -1,0 +1,12 @@
+@keyframes fadein{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+
+@for $i from 0 to 11{
+.item--#{$i}{
+    animation: fadein $i*0.8s;
+}
+}

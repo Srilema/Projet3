@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: row;
     background-color: rgb(154, 154, 154);
+    i{
+        font-size:x-large;
+        padding: 1.2rem 1rem 0.5rem 1rem;
+    }
 }
 
 .presentation{
@@ -18,13 +22,12 @@
     flex-direction:column;
     width:80%;
     margin: 0rem 1rem 0rem 1rem;
-}
-    .steps_item{
+    &_item{
         display:flex;
         flex-direction:row;
         margin: 1rem 0rem 1rem 0rem;
     }
-    .steps_number{
+    &_number{
         background-color:$omfpurple;
         color:white;
         border-radius: 100%;
@@ -38,34 +41,53 @@
         margin: 1rem -0.30rem 1rem 0rem;
         z-index: 2;
     }
-    .steps_text{
+    &_text{
         display:flex;
         flex-direction:row;
         border-color:black;
         padding: 1rem 1rem 1rem 1rem;
-        box-shadow: black 6px 6px 6px 6px;
+        box-shadow: grey 4px 4px 4px 4px;
         justify-content: space-evenly;
         border-radius: 1rem;
         width:27rem;
         background-color: whitesmoke;
-    }
-        .steps_text_symbol{
+        &_symbol{
             padding:0rem 1rem 0rem 1rem;
+            font-size:x-large;
         }
+    }
+}
+.steps_text:hover{
+    background-color: #e7d7fa;
+    .steps_text_symbol{
+        color:$omfpurple;
+    }
+}
 
 .resto{
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
     padding:1rem;
-}
-    .resto_card{
+    &_card{
         height: 13rem;
         border-radius:2rem;
         box-shadow: 6px 6px 6px 6px grey;
         margin: 1rem 0rem 1rem 0rem;
+        position: relative;
+        @media (min-width:720px){
+            height:20rem;
+        }
+        &_overlay{
+            background-color:$omfteal;
+            color:green;
+            position:absolute;
+            top:15;
+            right:15;
+            padding:0.6rem;
+        }
     }
-        .resto_text{
+        &_text{
             display:flex;
             height:4rem;
             width:85%;
@@ -73,17 +95,30 @@
             padding:0.2rem 1rem 0.5rem 1rem;
             justify-content: space-between;
         }
-        .resto_hearth{
+        &_hearth{
             font-size: x-large;
-            padding: 1rem 0rem 1rem 0rem
+            padding: 1rem 0rem 1rem 0rem;
+            position:relative;
+            i.fas.fa-heart{
+                display:none;
+                color:$omfpurple;
+            }
         }
-        .resto_hearth:hover{
-            color: $omfpurple;
+    }
+.resto_hearth:hover{
+    i.far.fa-heart{
+        display:none;
         }
-
+    i.fas.fa-heart{
+        display:block;
+        }
+    }
 .resto_card img {
     width:100%;
     height:8rem;
     object-fit: cover;
-    border-radius: 2rem 2rem 0rem 0rem
+    border-radius: 2rem 2rem 0rem 0rem;
+    @media (min-width:720px){
+        height:15rem;
+    }
 }
