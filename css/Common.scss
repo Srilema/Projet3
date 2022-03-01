@@ -21,7 +21,7 @@ header {
 
 footer{
     width:100%;
-    background-color: black;
+    background-color:#353535;
     color: white;
     img {
         width:5rem;
@@ -47,6 +47,7 @@ a {
     padding:1rem;
     border-radius:3rem;
     font-weight: bold;
+    box-shadow: 2px 2px 2px 2px;
 }
 .button-purple:hover{
     background-color: #bf8bff;

@@ -2,11 +2,49 @@
     0%{opacity:0;}
     100%{opacity:1;}
 }
-
-
-
 @for $i from 0 to 11{
 .item--#{$i}{
     animation: fadein $i*0.8s;
 }
 }
+@keyframes fadeout{
+    from{opacity:1;
+        z-index:11;
+    }
+    to{opacity:0;
+    display: none;
+    z-index:-5;
+}
+}
+
+.loader{
+    position:absolute;
+    height:100vh;
+    width:100%;
+    animation:fadeout 10s forwards;
+    background-color: white;
+
+}
+.spin{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    border: solid white 10px;
+    border-bottom:$omfpurple solid 10px;
+    border-top:$omfpurple solid 10px;
+    animation: spinner 10s forwards;
+    position:relative;
+    left:50%;
+    right:50%;
+    top:50%;
+    @media(max-width:720px){
+        left:50%;
+    }
+  }
+  @keyframes spinner{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);
+    display:none;
+    opacity:0;
+    }
+  }

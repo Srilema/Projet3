@@ -16,6 +16,10 @@
     margin: 0rem 0rem 0rem 0rem;
     z-index: 2;
     position: relative;
+    @media(min-width:920px){
+        width:95%;
+        margin:auto;
+    }
     &_title{
         padding:0.5rem 0rem 0rem 0.5rem;
         display:flex;
@@ -105,7 +109,7 @@
     &:hover{
     .fooditems_tickbox{
         margin:-1rem -1rem -1rem -1rem;
-        transition: margin 2s;
+        transition: margin 1s;
         i{
             transform:rotate(540deg);
             transition: transform 1.5s;

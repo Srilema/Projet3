@@ -20,12 +20,21 @@
 .steps {
     display: flex;
     flex-direction:column;
-    width:80%;
     margin: 0rem 1rem 0rem 1rem;
+    &_all{
+        @media(min-width:920px){
+            display:flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+        }
+    }
     &_item{
         display:flex;
         flex-direction:row;
         margin: 1rem 0rem 1rem 0rem;
+        @media(min-width:720px){
+            width:30%;
+        }
     }
     &_number{
         background-color:$omfpurple;
