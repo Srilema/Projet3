@@ -1,7 +1,7 @@
 .position {
     display: flex;
     flex-direction: row;
-    background-color: rgb(154, 154, 154);
+    background-color: #d3d3d3;
     i{
         font-size:x-large;
         padding: 1.2rem 1rem 0.5rem 1rem;
@@ -12,9 +12,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(210, 210, 210);
+    background-color:#e9e9e9;
     padding: 1rem 0rem 1rem 0rem;
     align-items: center;
+    text-align:center;
 }
 
 .steps {
@@ -85,7 +86,7 @@
         margin: 1rem 0rem 1rem 0rem;
         position: relative;
         @media (min-width:720px){
-            height:20rem;
+            height:15rem;
         }
         &_overlay{
             background-color:$omfteal;
@@ -128,6 +129,6 @@
     object-fit: cover;
     border-radius: 2rem 2rem 0rem 0rem;
     @media (min-width:720px){
-        height:15rem;
+        height:10rem;
     }
 }

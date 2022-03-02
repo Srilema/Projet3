@@ -112,8 +112,8 @@
   position: absolute;
   height: 100vh;
   width: 100%;
-  -webkit-animation: fadeout 10s forwards;
-          animation: fadeout 10s forwards;
+  -webkit-animation: fadeout 8s forwards;
+          animation: fadeout 8s forwards;
   background-color: white;
 }
 
@@ -124,8 +124,8 @@
   border: solid white 10px;
   border-bottom: #9356DC solid 10px;
   border-top: #9356DC solid 10px;
-  -webkit-animation: spinner 10s forwards;
-          animation: spinner 10s forwards;
+  -webkit-animation: spinner 8s forwards;
+          animation: spinner 8s forwards;
   position: relative;
   left: 50%;
   right: 50%;
@@ -134,7 +134,8 @@
 
 @media (max-width: 720px) {
   .spin {
-    left: 50%;
+    left: 35%;
+    top: 35%;
   }
 }
 
@@ -172,7 +173,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #9a9a9a;
+  background-color: #d3d3d3;
 }
 
 .position i {
@@ -191,11 +192,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #d2d2d2;
+  background-color: #e9e9e9;
   padding: 1rem 0rem 1rem 0rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .steps {
@@ -320,7 +322,7 @@
 
 @media (min-width: 720px) {
   .resto_card {
-    height: 20rem;
+    height: 15rem;
   }
 }
 
@@ -378,7 +380,7 @@
 
 @media (min-width: 720px) {
   .resto_card img {
-    height: 15rem;
+    height: 10rem;
   }
 }
 
@@ -417,6 +419,7 @@ footer {
   width: 100%;
   background-color: #353535;
   color: white;
+  padding: 1rem;
 }
 
 footer img {
@@ -425,7 +428,16 @@ footer img {
 
 footer h4 {
   font-family: "Shrikhand", cursive, serif;
-  margin: 0rem 0rem -1rem 0rem;
+  margin: 0rem 0rem 0rem 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  margin: 0.5rem;
 }
 
 body {
@@ -442,12 +454,17 @@ a {
   padding: 1rem;
   border-radius: 3rem;
   font-weight: bold;
-  -webkit-box-shadow: 2px 2px 2px 2px;
-          box-shadow: 2px 2px 2px 2px;
+  -webkit-box-shadow: 2px 2px 2px 2px #757575;
+          box-shadow: 2px 2px 2px 2px #757575;
+  border: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .button-purple:hover {
   background-color: #bf8bff;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4 {
@@ -469,7 +486,7 @@ h1, h2, h3, h4 {
 }
 
 .maindiv {
-  background-color: gainsboro;
+  background-color: #e9e9e9;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -477,6 +494,7 @@ h1, h2, h3, h4 {
   margin: 0rem 0rem 0rem 0rem;
   z-index: 2;
   position: relative;
+  padding-left: 1.5rem;
 }
 
 @media (min-width: 920px) {
@@ -487,7 +505,7 @@ h1, h2, h3, h4 {
 }
 
 .maindiv_title {
-  padding: 0.5rem 0rem 0rem 0.5rem;
+  padding: 0.5rem 0rem 0rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,7 +563,7 @@ h1, h2, h3, h4 {
   background-color: white;
   padding: 0.3rem 0rem 0.3rem 1rem;
   width: 90%;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,6 +639,12 @@ h1, h2, h3, h4 {
   }
 }
 
+@media (max-width: 920px) {
+  .fooditems_tickbox i {
+    left: 40px;
+  }
+}
+
 .fooditems:hover .fooditems_tickbox {
   margin: -1rem -1rem -1rem -1rem;
   -webkit-transition: margin 1s;
@@ -636,13 +660,26 @@ h1, h2, h3, h4 {
   transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
-.maindiv .button-purple {
-  margin: 1rem 8rem 1rem 8rem;
+.maindiv_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
 }
 
-@media (min-width: 768px) {
-  .maindiv .button-purple {
-    margin: 1rem 40rem 1rem 40rem;
-  }
+.mainmenu_course h3 {
+  position: relative;
+}
+
+.mainmenu_course h3::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  bottom: -8;
+  border-bottom: 7px solid #99E2D0;
 }
 /*# sourceMappingURL=main.css.map */
