@@ -678,6 +678,12 @@ h1, h2, h3, h4 {
   }
 }
 
+@media (max-width: 320px) {
+  .fooditems_tickbox i {
+    left: 20px;
+  }
+}
+
 .fooditems:hover .fooditems_tickbox {
   margin: -1rem -1rem -1rem -1rem;
   -webkit-transition: margin 1s;
