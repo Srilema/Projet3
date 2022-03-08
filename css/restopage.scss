@@ -38,6 +38,7 @@
     }
 }
 .maindiv_title_hearth:hover{
+    cursor: pointer;
     i.far.fa-heart{
         display:none;
     }
@@ -74,10 +75,21 @@
     }
     &_text p{
         font-size:small;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+    }
+    &_text h4{
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
     }
     &_text{
         position:relative;
         width:85%;
+        &_text{
+            width:80%;
+        }
     }
     &_price {
         position:absolute;
@@ -96,6 +108,9 @@
         transform:rotate(180deg);
         justify-content:center;
         position:relative;
+        @media(max-width:430px){
+            width:18%;
+        }
         i {
             position:absolute;
             left:25px;
@@ -105,6 +120,9 @@
             }
             @media(max-width:920px){
                 left:40px;
+            }
+            @media(max-width:430px){
+                left:25px;
             }
         }
     }

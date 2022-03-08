@@ -362,6 +362,10 @@
   color: #9356DC;
 }
 
+.resto_hearth:hover {
+  cursor: pointer;
+}
+
 .resto_hearth:hover i.far.fa-heart {
   display: none;
 }
@@ -529,6 +533,10 @@ h1, h2, h3, h4 {
   color: #9356DC;
 }
 
+.maindiv_title_hearth:hover {
+  cursor: pointer;
+}
+
 .maindiv_title_hearth:hover i.far.fa-heart {
   display: none;
 }
@@ -594,11 +602,24 @@ h1, h2, h3, h4 {
 
 .fooditems_text p {
   font-size: small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fooditems_text h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fooditems_text {
   position: relative;
   width: 85%;
+}
+
+.fooditems_text_text {
+  width: 80%;
 }
 
 .fooditems_price {
@@ -627,6 +648,12 @@ h1, h2, h3, h4 {
   position: relative;
 }
 
+@media (max-width: 430px) {
+  .fooditems_tickbox {
+    width: 18%;
+  }
+}
+
 .fooditems_tickbox i {
   position: absolute;
   left: 25px;
@@ -642,6 +669,12 @@ h1, h2, h3, h4 {
 @media (max-width: 920px) {
   .fooditems_tickbox i {
     left: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .fooditems_tickbox i {
+    left: 25px;
   }
 }
 
