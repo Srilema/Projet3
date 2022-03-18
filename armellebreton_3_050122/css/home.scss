@@ -104,6 +104,9 @@
             flex-direction:row;
             padding:0.2rem 1rem 0.5rem 1rem;
             justify-content: space-between;
+            &_text{
+                color:black;
+            }
         }
         &_hearth{
             font-size: x-large;
