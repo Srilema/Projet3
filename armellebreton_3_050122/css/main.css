@@ -174,11 +174,14 @@
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #d3d3d3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .position i {
   font-size: x-large;
-  padding: 1.2rem 1rem 0.5rem 1rem;
+  padding: 1.2rem 1rem 0.5rem 0rem;
 }
 
 .presentation {
@@ -616,7 +619,7 @@ h1, h2, h3, h4 {
 
 .fooditems_text {
   position: relative;
-  width: 85%;
+  width: 100%;
 }
 
 .fooditems_text_text {
@@ -626,7 +629,7 @@ h1, h2, h3, h4 {
 .fooditems_price {
   position: absolute;
   bottom: 1rem;
-  right: 0rem;
+  right: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -689,6 +692,14 @@ h1, h2, h3, h4 {
   .fooditems_tickbox i {
     left: 35px;
   }
+}
+
+.fooditems:hover .fooditems_text {
+  width: 85%;
+}
+
+.fooditems:hover .fooditems_price {
+  right: 0.5rem;
 }
 
 .fooditems:hover .fooditems_tickbox {

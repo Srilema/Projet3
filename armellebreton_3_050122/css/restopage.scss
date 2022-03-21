@@ -85,7 +85,7 @@
     }
     &_text{
         position:relative;
-        width:85%;
+        width:100%;
         &_text{
             width:80%;
         }
@@ -93,7 +93,7 @@
     &_price {
         position:absolute;
         bottom: 1rem;
-        right: 0rem;
+        right: 1rem;
         @media(min-width:768px){
             right:1.5rem;
         }
@@ -134,6 +134,12 @@
 }
 .fooditems{
     &:hover{
+    .fooditems_text{
+        width:85%;
+    }
+    .fooditems_price{
+        right:0.5rem;
+    }
     .fooditems_tickbox{
         margin:-1rem -1rem -1rem -1rem;
         transition: margin 1s;
